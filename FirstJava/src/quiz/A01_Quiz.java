@@ -54,7 +54,7 @@ public class A01_Quiz {
 		int b = 37;
 		double c = (int)((b/a)*100)/100.0;
 		
-		System.out.println("한 역을 지나는데 걸린 시간 : "+ c);
+		System.out.println("한 역을 지나는데 걸린 시간 : "+ c +"분");
 		
 		
 		
