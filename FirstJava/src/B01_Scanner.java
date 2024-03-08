@@ -1,3 +1,4 @@
+import java.security.PublicKey;
 import java.util.Scanner;
 
 // import 외부 클래스를 이 파일에 가져와 사용하겠다는 의미
@@ -35,7 +36,7 @@ public class B01_Scanner {
 		
 		
 	
-	
+	 
 	
 	
 	
@@ -56,3 +57,7 @@ public class B01_Scanner {
 	}
 
 }
+
+
+
+
