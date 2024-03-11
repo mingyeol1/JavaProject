@@ -10,10 +10,33 @@ public class Quiz_240308_PM {
 //		}
 		
 		
-		
+//===========================================================================		
 		//2. 1에서 200사이의 수 중에서 2 또는 3의 배수가 아닌 수들의 총합.
 		
-//		int odd = 0;
+//		
+		
+		
+		int num = 0;
+		for(int i = 1; i <=200; i++) {
+			if(!(i%2 == 0 || i%3 == 0)) {
+				num +=i;
+			}
+		}
+		System.out.println("총합 : "+num);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		int odd = 0;
 //		for(int j = 1; j <= 200; j++) {
 //			if(j%2 == 1) {
 //				odd += j; 
@@ -29,15 +52,36 @@ public class Quiz_240308_PM {
 //		}
 //		System.out.println(sum);
 //		
-		
+		//===========================================================================				
 		//3. 1+ (1+2) +(1+2+3) + (1+2+3+4+) + (1+2+3+4+5) ......+(1+2+3+4+5+6+7+8+9+10)
 		//의 결과를 구하시오
 		
 		
-//		for(int k = 1; k <= 10; k++) {
-//			System.out.println(k);
-//		
-//		
+	
+		
+		int answer = 0;
+		for(int i = 1; i <= 10; i++) {
+			if(i !=1)System.out.print("+(");
+		for(int j = 1; j <= i; j++) {
+			System.out.print(j);
+			answer +=j;
+			if(j !=i)System.out.print("+");
+			}
+		if(i !=1)System.out.println(")");
+		}
+		System.out.println("결과 값은  : "+answer);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 //		sum = 0;
 //		int sum2 = 0;
 //		for (int i = 1; 1<= 10; i++) {
@@ -51,14 +95,14 @@ public class Quiz_240308_PM {
 //		}
 		
 		
-		 int sum = 0;
-		 int sum2 = 0;
-		 for(int i = 1; i <= 10; i++) {
-			 sum += i;
-			 sum2 += sum;
-		 }
-		System.out.println(sum2);
-		
+//		 int sum = 0;
+//		 int sum2 = 0;
+//		 for(int i = 1; i <= 10; i++) {
+//			 sum += i;
+//			 sum2 += sum;
+//		 }
+//		System.out.println(sum2);
+//		
 		
 		
 		

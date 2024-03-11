@@ -1,11 +1,4 @@
 /quiz/
-/B00_format.class
-/B02_ifExample1.class
-/B02_ifExampe2.class
-/B02_ifExample3.class
-/B02_ifExample4.class
-/B03_swtichExample1.class
-/B03_switchExample2.class
-/B04_forExample1.class
-/B04_forExample2.class
-/B04_forInfinity.class
+/B07_labeledLoopExample.class
+/B08_variableLifeTime.class
+/B09_arrayExample1.class
