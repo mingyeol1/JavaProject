@@ -38,6 +38,8 @@ public class B09_arrayExample1 {
 	s = new char[5];			//배열의 길이로 선언시 초기화 값이 없는 경우 char는 "\0000"값으로 초기화.
 	s[0] = 'A'; s[1] = 'B'; s[2] = 'C'; s[3] = 'D'; s[4] = 'E';
 	
+	System.out.println("=====================================");
+	
 	for(int i = 0; i < s.length; i++) {
 		System.out.print(s[i]);
 	}

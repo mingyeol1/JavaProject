@@ -8,7 +8,7 @@ public class B10_arrayExample2 {
 		
 		//배열의 요소는 length = 1 번 공간(방 저장공간)까지 존재함.
 		
-		System.out.println(numbers[numbers.length - 1]);
+		System.out.println(numbers[numbers.length -1]);
 		
 		//2차원 배열 : 데이터 타입이 int[]로 구성되어 있는 배열.
 		int[][] arr2 = {
