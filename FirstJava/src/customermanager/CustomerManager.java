@@ -1,6 +1,7 @@
 package customermanager;
 
 import java.util.Scanner;
+import java.util.jar.Attributes.Name;
 
 import customermanager.oop.Customer;
 
@@ -144,7 +145,7 @@ public class CustomerManager {
 	public static void updateCustomerData(int index) {
 		System.out.println("-----------UPDATE CUSTOMER INFO-------------");
 		System.out.print("이름("+cusList[index].getName()+") : ");
-		String name = scan.nextLine();
+		String name = scan.next();   //Line으로 처리될 시 줄바꿈이 엔터가 될 수 있다. 조심
 		if(name.length() != 0) {		//name을 입력했는지 안했는지 검증
 			cusList[index].setName(name);
 		}
@@ -163,6 +164,8 @@ public class CustomerManager {
 	count--;
 	}
 
+
+	
 }
 
 
