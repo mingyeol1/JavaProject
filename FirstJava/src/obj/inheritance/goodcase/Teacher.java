@@ -7,6 +7,12 @@ public class Teacher extends Person{              //extends 와 클래스 입력
  public String teacherId;
  public String subject;
  
+ public Teacher() {}
+ 
+ public Teacher(String name, int age, String subject) {
+	 super(name, age);
+	 this.subject = subject;
+ }
  
 @Override
 	public String getDatails() {

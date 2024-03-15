@@ -1,9 +1,27 @@
 package quiz;
 
 class Airplane {
+	//멤버 변수
+	public String name;
+	
+	//생성자
+	public Airplane(String name) {
+		this.name = name;
+	}
+	//메서드
+		void takeOff() {
+			System.out.println("비행기가 이륙한다.");
+	}
+		void fly() {
+			System.out.println("일반 모드로 비행한다.");
+		}
+		void land() {
+			System.out.println("비행기가 착륙한다.");
+		}
 	
 	
-	
+		
+	}
 
 class SuperSonicAp extends Airplane {
 	
@@ -21,20 +39,29 @@ class SuperSonicAp extends Airplane {
 
 
 	
+	int flyMode;
 
-
-
-	
+	public SuperSonicAp(String name) {
+		super(name);
+		
 	}
-
-
+	
+	void fly() {
+		if(flyMode == 0) {
+			super.fly();
+	}else if(flyMode == 1) {
+		System.out.println("고속모드로 비행한다.");
+	}
 }
 
 public class Quiz_240314_PM {
-	
-	
+	public static void main(String[] args) {
+		//비행기 SuperSonicAp
+		SuperSonicAp s1 = new SuperSonicAp("스텔스");
+		s1.takeOff();
 	}
+}
 
 
-
+}
 

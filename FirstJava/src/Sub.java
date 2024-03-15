@@ -11,6 +11,10 @@ public class Sub extends Super {
 		//System.out.println("Super num4 = "+num4);	//prinvate //클래서 내에서 접근 //직접 접근x
 		System.out.println("Super num5 = "+getNim4()); //불러오기.
 		System.out.println("Sub num5 = "+num5);
+	
+		System.err.println("이름"+name);
+	
+	
 	}
 
 }

@@ -7,6 +7,7 @@ public class Super { //부모 클래스
 	/*default*/		int num3 = 30;
 	private			int num4 = 40;
 	
+	public String name = "홍길동";
 	
 	//getter
 	public int getNim4() {
