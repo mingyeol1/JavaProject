@@ -17,7 +17,7 @@ public class C08_polymorphism2 {
 	
 	
 	//다형적 인자별(입력)로 출력하는 메서드
-	public static void printPersonInfo(Person p) {
+	public static void printPersonInfo(Person p) {	//Person p 다형성인자.
 		if(p instanceof Student) {
 			System.out.println("*********************Student Info*********************");
 		}else if(p instanceof Teacher) {

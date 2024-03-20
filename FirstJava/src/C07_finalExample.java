@@ -74,7 +74,7 @@ public class C07_finalExample {
 		new C07_finalExample().doIt("홍길동");
 		System.out.println();
 		
-		System.out.println(new FinalInit(100).a);
+		System.out.println(new FinalInit(101).a);
 		
 
 	}

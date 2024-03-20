@@ -4,7 +4,7 @@ public class AccountExample {
 	public static void main(String[] args) {
 		// Account 클래스를 테스트하기 위한 메인 메서드
 		
-		Account acc1 = new Account("홍길동", "010-1111-2345-108", null, 100000);
+		Account acc1 = new Account("홍길동", "010-1111-2345-108", null, 100000); //생성자 객체 선언 및 생성.
 		System.out.println("잔액 확인 : "+acc1.getBalance());
 		// 입금 : 10000원
 		acc1.saveMoney(10000);

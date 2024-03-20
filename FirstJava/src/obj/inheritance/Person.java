@@ -41,7 +41,7 @@ public class Person {
 	public String name;
 	public int age;
 	protected float height;    //상속받을 땐 사용가능 
-	float weight;      //공개제한
+	float weight;      //공개제한   //default
 	
 	public Person() {}//기본생성자
 	
@@ -91,7 +91,7 @@ public boolean equals(Object obj) {
 		return true;
 		
 	}
-	if(obj == null) return false; //null값 확인 객체의 값이 없을 때 확인.
+	if(obj == null) return false; //null값 확인// 객체의 값이 없을 때 확인.
 	if(getClass() != obj.getClass()) return false; //객체 생성 클래스 확인
 	Person other = (Person)obj;
 	if(age != other.age) return false; //객체 내에 age멤버의 값을 비교 확인

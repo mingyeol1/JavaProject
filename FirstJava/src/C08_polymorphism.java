@@ -1,5 +1,5 @@
 
-/*다양성
+/*다형성
 *  - 여러가지 형태를 가지는 성질을 의미함.
 *  -다형성은 상속을 전제조건으로 함.
 *  -동일한 메시지라도 어떤 객체에 전달되느냐에 따라서 다양한 동작을 발생하게 된다.
@@ -33,14 +33,14 @@ public class C08_polymorphism {
 
 	public static void main(String[] args) {
 		//다형성 테스트
-		Person p = new Student("홍길동", 17, "20240315","도술");
+		Person p = new Student("홍길동", 17, "20240315","도술"); //부모클래스에 자식 클래스를 집어넣는것 //업캐스팅
 		//오버라이드 된 메서드의 실행
-		System.out.println(p.getDatails());  //자식의 출력
+		System.out.println(p.getDatails());  //오버라이드 된 자식의 출력
 		Person pO  = new Person("이순신", 40);
 		System.out.println(pO.getDatails()); //부모클래스를 직접 불러도 자식의 내용을 출력 //오버라이드 된 내용은 자식의 내용을 출력
 		p.walk();//상속받은 메서드 실행.
 //		p.study;		//p는 다형적 객체이기 때문에 부모 클래스에 있는 메서드만 가능하다.
-		Student casting = (Student)p;
+		Student casting = (Student)p;	//다운캐스팅.
 		//study() 사용해야 하는 경우에는 Student로 캐스팅이 되어야 사용이 가능하다.
 		casting.study();
 		

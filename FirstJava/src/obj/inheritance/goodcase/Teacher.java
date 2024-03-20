@@ -2,7 +2,7 @@ package obj.inheritance.goodcase;
 
 import obj.inheritance.Person;
 
-public class Teacher extends Person{              //extends 와 클래스 입력시 상속 받게됨.
+public class Teacher extends Person{              //extends 와 클래스(상속받을,부모) 입력시 상속 받게됨.
 
  public String teacherId;
  public String subject;
