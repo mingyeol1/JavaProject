@@ -58,3 +58,16 @@
 /Won.class
 /E13_variableLengthEx.class
 /F01_fileEx.class
+/F02_fileInputStreamEx1.class
+/F03_fileReaderEx.class
+/F04_fileWriterEx.class
+/F05_fileOutputStreamEx.class
+/F06_filterStreamEx.class
+/F07_bufferdReadWriteEx.class
+/F08_textWriteApplication.class
+/F09_textReadApplication.class
+/F10_dataWriteApplication.class
+/F11_dataReadApplication.class
+/util/
+/F12_writeCustomerEx.class
+/F13_readCustomerEx.class

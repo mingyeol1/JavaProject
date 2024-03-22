@@ -69,7 +69,7 @@ public class F01_fileEx {
 			System.out.println("파일 생성 중 에러가 발생하였습니다.");	
 			}
 			
-			//delete : 파일 혹은 폴더를 사제한다. 단, 폴더를 비어있지 않으면 삭제할 수 없다.
+			//delete : 파일 혹은 폴더를 삭제한다. 단, 폴더를 비어있지 않으면 삭제할 수 없다.
 			test = new File("D:/FileTest/temp/abc");
 			test.delete();
 //			test = new File("D:/FileTest/temp/a.txt");

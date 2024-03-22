@@ -1,28 +1,20 @@
 package review;
 
 class Car{
-	String color = "white";
-	int num = 5; 
+public static void main(String[] args) {
 	
-	public void go() {
-		System.out.println("전진");
+	for(int i = 2; i <= 9; i++) {
+		System.out.println(i+"단");
+		for(int j = 1; j < i; j++ ) {
+			System.out.println(i+"x"+j+"="+i*j);
+		}
+	System.out.println();
 	}
-	 void back() {
-		System.out.println("후진");
-	}
-}
-class Taxi extends Car{ //재정의  완전히 똑같아야함
-	int num = 3;
-	public void go() {
-		System.out.println("저저저저저저ㅓㅈ전진");
-	}
-}
-
-public class TaxiMain {
-
-	public static void main(String[] args) {
-		double d = 3L;
-		System.out.println(d);
+	
+	
+	System.out.println();
+	
+}	
 	}
 
-}
+
