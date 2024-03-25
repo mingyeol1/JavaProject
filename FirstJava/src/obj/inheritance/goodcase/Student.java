@@ -53,6 +53,8 @@ public class Student extends Person{
 		System.out.println(name + "은/는 공부합니다.");
 	}
 	
+	
+	
 	// Overriding 이란?
 	//부모 클래스로 부터 상속받은 메서드를 자식 클래스에서 행위(Method)를 바꾸거나 보완하기
 	//위해서 다시 정의해서 사용하는 것(재정의)(덮어 씌우기)
@@ -68,7 +70,33 @@ public class Student extends Person{
 			// TODO Auto-generated method stub
 			return "[이름: "+name +"\t나이 : "+age+"\t학번 : "+studentId+"\t전공 : "+major+"]";
 
-
-
 	}
+
+public String getName() {
+	return this.name;
 }
+
+public String getStudentId() {
+	return studentId;
+}
+
+public String getMajor() {
+	return major;
+}
+
+public void setStudentId(String studentId) {
+	this.studentId = studentId;
+}
+
+public void setMajor(String major) {
+	this.major = major;
+}
+
+
+
+
+}
+
+
+
+
