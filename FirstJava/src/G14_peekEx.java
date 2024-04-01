@@ -18,8 +18,8 @@ public class G14_peekEx {
 		
 		List<Shape> list = Arrays.asList(s1, s2, s3, s4);
 		
-		list.parallelStream().mapToDouble(a -> a.area())
-						.peek(a -> System.out.println(a)).sum();
+	//	list.parallelStream().mapToDouble(a -> a.area())
+	//					.peek(a -> System.out.println(a)).sum();
 		// peek()은 중간 반복자이기 때문에 최종처리 메서드가 있어야만 동작이 됩니다. 
 
 	}

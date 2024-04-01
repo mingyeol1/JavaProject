@@ -81,17 +81,17 @@ public class G16_optionalEx {
 		
 		List<Shape> list = Arrays.asList(s1, s2, s3, s4);
 		
-		double areaSum = list.stream().mapToDouble(Shape::area).sum();
-		System.out.println("sum()를 이용한 면접 합계 : "+areaSum);
-		
-		areaSum = list.stream().mapToDouble(Shape::area)
-				.reduce((a, b) -> a+b).getAsDouble();
-		System.out.println("reduce(Operator)를 이용한 면적 합계 : "+areaSum);
-		
-		areaSum = list.stream().mapToDouble(Shape::area)
-				.reduce(0, (a,b) -> a+b);
-		System.out.println("reduce(0, Operator)를 이용한 면적 합계 : "+areaSum);
-		
+//		double areaSum = list.stream().mapToDouble(Shape::area).sum();
+//		System.out.println("sum()를 이용한 면접 합계 : "+areaSum);
+//		
+//		areaSum = list.stream().mapToDouble(Shape::area)
+//				.reduce((a, b) -> a+b).getAsDouble();
+//		System.out.println("reduce(Operator)를 이용한 면적 합계 : "+areaSum);
+//		
+//		areaSum = list.stream().mapToDouble(Shape::area)
+//				.reduce(0, (a,b) -> a+b);
+//		System.out.println("reduce(0, Operator)를 이용한 면적 합계 : "+areaSum);
+//		
 		
 		
 		
