@@ -39,21 +39,23 @@ public class I07_JDBC2 {
 //			}
 			
 			
-			// 입력값을 받아서 해당 결과를 출력하는 프로그램을 만드세요
-			// 1. id값을 입력받아 출력 - 결과가 없으면 없다고 출력
-//			System.out.println("입력값을 이용한 검색 문제");
-//			System.out.print("검색할 id를 입력하세요 : ");
-//			int inputId = scan.nextInt();
-//			
-//			//sql 작성
-//			String sql1 = "select * from Persons where id = "+ inputId;
-//			rs = stmt.executeQuery(sql1);
-//			if(rs.next()) {
-//				System.out.printf("id : %d, 성 : %s, 이름 : %s, 나이 : %d, 도시 : %s \n",rs.getInt("id"),rs.getString("lastname"),rs.getShort("firstname"),rs.getInt("age"),rs.getString("city"));
-//				rs.close();
-//			}else {
-//				System.out.println("입력한 id의 결과가 없습니다.");
-//			}
+//			 입력값을 받아서 해당 결과를 출력하는 프로그램을 만드세요
+//			 1. id값을 입력받아 출력 - 결과가 없으면 없다고 출력
+			System.out.println("입력값을 이용한 검색 문제");
+			System.out.print("검색할 id를 입력하세요 : ");
+			int inputId = scan.nextInt();
+			
+			//sql 작성
+			String sql1 = "select * from Persons where id = "+ inputId;
+			rs = stmt.executeQuery(sql1);
+			if(rs.next()) {
+				System.out.printf("id : %d, 성 : %s, 이름 : %s, 나이 : %d, 도시 : %s \n",
+						rs.getInt("id"),rs.getString("lastname"),rs.getString("firstname"),
+								rs.getInt("age"),rs.getString("city"));
+				rs.close();
+			}else {
+				System.out.println("입력한 id의 결과가 없습니다.");
+			}
 			// 2. 이름을 통한 내용을 출력 - 단, 이름의 일부를 입력해도 출력해야 한다.
 			
 			System.out.println("이름 입력을 통한 내용 출력 문제");
